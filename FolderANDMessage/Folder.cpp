@@ -45,3 +45,7 @@ Folder& Folder::operator=(const Folder& rhs) {
 	add_to_Message(rhs);
 	return *this;
 }
+
+Folder::Folder(const Folder& f) :Messages(f.Messages) {
+	add_to_Message(f);
+}
