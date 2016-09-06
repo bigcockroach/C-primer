@@ -126,7 +126,7 @@ void RB_Tree::RB_DELETE(RB_Node* z) {
 		y_original_color = y->color;
 		x = y->right;
 		if (y->p == z && x != nullptr)
-			x->p == z;
+			x->p = z;
 		else {
 			RB_TRANSPLANT(y, y->right);
 			y->right = z->right;

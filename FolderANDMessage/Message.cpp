@@ -1,5 +1,4 @@
 #include "Message.h"
-#include "Folder.h"
 #include <string>
 #include <set>
 

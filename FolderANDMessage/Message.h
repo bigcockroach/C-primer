@@ -2,11 +2,12 @@
 #define MESSAGE_H
 #include <string>
 #include <set>
+#include "Folder.h"
 
 class Message{
+	friend class Folder;
 	friend void swap(Message&, Message&);
 	friend void swap(Folder&, Folder&);
-	friend class Folder;
 public:
 	//folders被隐式初始化为空集合
 	explicit Message(const std::string &str = "") : contents(str) {}
